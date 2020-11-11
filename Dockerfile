@@ -1,6 +1,6 @@
 FROM centos:7.8
 ADD * /root/
-RUN \cp -rnf /root/cgroup/* /sys/fs/cgroup/;\
+RUN \cp -rf /root/cgroup/* /sys/fs/cgroup/;\
 rm -rf /etc/systemd/system/*.wants/*;\
 rm -rf /lib/systemd/system/basic.target.wants/*;\
 rm -rf /lib/systemd/system/anaconda.target.wants/*;\
