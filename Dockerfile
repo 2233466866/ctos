@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:7.9.2009
 ADD * /root/
 RUN \cp -rf /root/cgroup/* /sys/fs/cgroup/;\
 rm -rf /etc/systemd/system/*.wants/*;\
